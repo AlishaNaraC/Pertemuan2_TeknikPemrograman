@@ -11,25 +11,18 @@ import java.util.Scanner;
 public class Soal5 {
     public static void main(String args[]){
         Scanner mobil=new Scanner(System.in);
-        int m1,m2,m3,m4,jumlah=0,hasil=0;
+        String m,gabung;
+        long jumlah=0,hasil=0;
         
-        m1=mobil.nextInt();
-        m2=mobil.nextInt();
-        m3=mobil.nextInt();
-        m4=mobil.nextInt();
-        
-        jumlah=sum(m1,m2,m3,m4);
-        hasil=999999-jumlah;
+        m=mobil.nextLine();
+        gabung=m.replaceAll("\\s", "");
+        jumlah=Long.parseLong(gabung);
+        hasil=jumlah-999999;
         
         if(hasil%5!=0){
-            System.out.println("jalan");
-        }else if(hasil%5==0){
             System.out.println("berhenti");
+        }else if(hasil%5==0){
+            System.out.println("jalan");
         }
-        
-    }
-
-    private static int sum(int m1, int m2, int m3, int m4) {
-        return(m1+m2+m3+m4);
     }
 }
