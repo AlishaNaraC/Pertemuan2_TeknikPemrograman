@@ -24,5 +24,6 @@ public class Soal5 {
         }else if(hasil%5==0){
             System.out.println("jalan");
         }
+        
     }
 }
