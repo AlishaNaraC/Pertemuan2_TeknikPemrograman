@@ -15,7 +15,7 @@ public class Soal4 {
         float gaji=500000,hitung=0,Tgaji=0,tItem=0;
         item=jual.nextInt();
         
-        if(item>=80){
+        if(item>80){
             hitung=((item*50000)*35)/100;   //bonus penjualan 35% dari total  penjualan
             Tgaji=gaji + hitung;
         }else if(item>=40){
