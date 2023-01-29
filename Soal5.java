@@ -20,7 +20,7 @@ public class Soal5 {
         
         jumlah=sum(m1,m2,m3,m4);
         hasil=999999-jumlah;
-        System.out.println(hasil);
+        
         if(hasil%5!=0){
             System.out.println("jalan");
         }else if(hasil%5==0){
